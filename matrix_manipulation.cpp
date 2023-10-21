@@ -1,3 +1,16 @@
+/*
+Program Name: EECS 348 Lab 06
+Purpose: The purpose of this lab is to get framiliar with the differences between C and C++ (specifically with file IO)
+Author: Logan Alexander Smith
+KUID: 3096504
+Due Date: 10/21/2023
+Lab: lab06
+Last modified: 10/21/2023
+Inputs: A file containing the size of two square matricies and their corresponding values
+Outputs: The values of the matricies printed followed by the sum, the product, and difference of the two matricies.
+Sources: None Used
+*/
+
 #include <iostream>
 #include <fstream>
 
