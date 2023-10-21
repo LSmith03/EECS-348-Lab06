@@ -1,8 +1,5 @@
-Matrix_Manipulation: main.o
-	g++ -std=c++11 -g -Wall -o main.cpp
-	
-main.o: main.cpp
-	g++ -std=c++11 -g -Wall -c main.o
-	
+main: main.cpp
+	g++ main.cpp -o main
+
 clean:
-	rm *.o Matrix_Manipulation
+	rm -f *.o
