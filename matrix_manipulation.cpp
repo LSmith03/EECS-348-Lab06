@@ -13,12 +13,14 @@ Sources: None Used
 
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 
 void print_matrix(int** matrix, int n) {
     /*Formats and prints a matrix*/
+    int width = 5; // You can adjust this value as needed
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            std::cout << matrix[i][j] << " "; // Prints each element of the matrix
+            std::cout << std::setw(width) << matrix[i][j]; // Use setw to set a fixed width for each value
         }
         std::cout << std::endl; // Jumps to next line after printing each column
     }
@@ -78,7 +80,7 @@ int main() {
     int** matrixB = new int*[n];
 
 // Convert the arrays to 2D-arrays (creating a matrix)
-    for(int i; i < n; i++) {
+    for(int i = 0; i < n; i++) {
         matrixA[i] = new int[n];
         matrixB[i] = new int[n];
     }
